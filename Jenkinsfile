@@ -4,10 +4,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Greeting') {
+        stage('Deploy') {
             steps {
-                helloWorld('Divya')
+                deployApp(appName: 'MyService', env: 'staging')
             }
         }
     }
 }
+
+
+// pipeline {
+//     agent any
+
+//     stages {
+//         stage('Greeting') {
+//             steps {
+//                 helloWorld('Divya')
+//             }
+//         }
+//     }
+// }
