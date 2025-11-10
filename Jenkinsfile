@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                deployApp(appName: 'MyService', env: 'staging')
+                deployapp(appName: 'MyService', env: 'staging')
             }
         }
     }
