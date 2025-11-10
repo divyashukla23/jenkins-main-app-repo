@@ -1,7 +1,10 @@
 @Library('my-shared-lib') _
+
 pipeline {
-    stages{
-        stage('Greeting'){
+    agent any
+
+    stages {
+        stage('Greeting') {
             steps {
                 helloWorld('Divya')
             }
